@@ -1,29 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "game_mode_switcher",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Game Mode Switcher",
+  "description": "Allows switching your game mode.",
   "authors": [
-    "Me!"
+    "Juuz"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/Juuxel/GameModeSwitcher"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      {
+        "adapter": "kotlin",
+        "value": "juuxel.gamemodeswitcher.GameModeSwitcher"
+      }
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "mixins.game_mode_switcher.json"
   ],
 
   "depends": {

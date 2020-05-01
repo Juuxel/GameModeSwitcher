@@ -1,10 +1,13 @@
 {
   "required": true,
   "minVersion": "0.7.11",
-  "package": "net.fabricmc.example.mixin",
+  "package": "juuxel.gamemodeswitcher.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "MinecraftMixin"
+    "EntityMixin",
+    "MinecraftMixin",
+    "MobMixin",
+    "SurvivalModeMixin"
   ],
   "injectors": {
     "defaultRequire": 1
